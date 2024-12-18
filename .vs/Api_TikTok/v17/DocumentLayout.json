@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Api_TikTok\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\repository\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:repository\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\repository\\impl\\videorepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:repository\\impl\\videorepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\controller\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:controller\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VideoController.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Controller\\VideoController.cs",
+              "RelativeDocumentMoniker": "Controller\\VideoController.cs",
+              "ToolTip": "E:\\Api_TikTok\\Controller\\VideoController.cs",
+              "RelativeToolTip": "Controller\\VideoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T09:37:57.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VideoRepositoryImpl.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Repository\\Impl\\VideoRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "Repository\\Impl\\VideoRepositoryImpl.cs",
+              "ToolTip": "E:\\Api_TikTok\\Repository\\Impl\\VideoRepositoryImpl.cs",
+              "RelativeToolTip": "Repository\\Impl\\VideoRepositoryImpl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T09:37:51.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VideoRepository.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Repository\\VideoRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\VideoRepository.cs",
+              "ToolTip": "E:\\Api_TikTok\\Repository\\VideoRepository.cs",
+              "RelativeToolTip": "Repository\\VideoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T09:37:44.809Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

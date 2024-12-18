@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Api_TikTok\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\controller\\uploadfilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:controller\\uploadfilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\dto\\videodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:dto\\videodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\service\\impl\\uploadfileserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:service\\impl\\uploadfileserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\model\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:model\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VideoDto.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Dto\\VideoDto.cs",
+              "RelativeDocumentMoniker": "Dto\\VideoDto.cs",
+              "ToolTip": "E:\\Api_TikTok\\Dto\\VideoDto.cs",
+              "RelativeToolTip": "Dto\\VideoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T09:02:52.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Video.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Model\\Video.cs",
+              "RelativeDocumentMoniker": "Model\\Video.cs",
+              "ToolTip": "E:\\Api_TikTok\\Model\\Video.cs",
+              "RelativeToolTip": "Model\\Video.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T08:43:30.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UploadFileServiceImpl.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Service\\Impl\\UploadFileServiceImpl.cs",
+              "RelativeDocumentMoniker": "Service\\Impl\\UploadFileServiceImpl.cs",
+              "ToolTip": "E:\\Api_TikTok\\Service\\Impl\\UploadFileServiceImpl.cs",
+              "RelativeToolTip": "Service\\Impl\\UploadFileServiceImpl.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAqwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T08:17:19.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UploadFileController.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Controller\\UploadFileController.cs",
+              "RelativeDocumentMoniker": "Controller\\UploadFileController.cs",
+              "ToolTip": "E:\\Api_TikTok\\Controller\\UploadFileController.cs",
+              "RelativeToolTip": "Controller\\UploadFileController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T08:06:42.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Api_TikTok\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T07:56:43.298Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
