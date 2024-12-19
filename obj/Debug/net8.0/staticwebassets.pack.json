@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Api_TikTok\\wwwroot\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png",
+      "PackagePath": "staticwebassets\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Api_TikTok.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Api_TikTok.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Api_TikTok.props",
+      "PackagePath": "build\\Api_TikTok.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Api_TikTok.props",
+      "PackagePath": "buildMultiTargeting\\Api_TikTok.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Api_TikTok.props",
+      "PackagePath": "buildTransitive\\Api_TikTok.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -9,6 +9,8 @@ namespace Api_TikTok.Service
         Task<bool> RegisterUserAsync(RegisterDto request);
         Task<LoginDto?> LoginUserAsync(string email, string password);
         Task<bool> ChangePasswordAsync(int userId, string oldPassword, string newPassword);
+        Task<bool> UpdateProfileAsync(int userId, UpdateProfileDto request);
+
     }
 
 }

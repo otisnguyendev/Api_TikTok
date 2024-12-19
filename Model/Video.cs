@@ -20,7 +20,7 @@
 
             public string Hashtags { get; set; }
 
-            public string VideoUrl { get; set; }
+            //public string VideoUrl { get; set; }
 
             [Column("privacy_level")]
             public string PrivacyLevel { get; set; } = "public";

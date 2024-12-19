@@ -1,41 +1,5 @@
 [
   {
-    "ContainingType": "Api_TikTok.Controller.UploadFileController",
-    "Method": "UploadVideo",
-    "RelativePath": "api/upload-file/upload-video",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "file",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "title",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "hashtags",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "privacyLevel",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Api_TikTok.Controller.UserController",
     "Method": "GetAll",
     "RelativePath": "api/users",
@@ -84,6 +48,37 @@
   },
   {
     "ContainingType": "Api_TikTok.Controller.UserController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/users/{id}/update-profile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Bio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Avatar",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.UserController",
     "Method": "Login",
     "RelativePath": "api/users/login",
     "HttpMethod": "POST",
@@ -110,6 +105,42 @@
         "Name": "request",
         "Type": "Api_TikTok.Dto.RegisterDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.VideoController",
+    "Method": "UploadVideo",
+    "RelativePath": "api/videos/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Hashtags",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PrivacyLevel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VideoFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

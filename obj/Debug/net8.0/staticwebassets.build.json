@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "6gImxt25JyTbV49uSWZFou4eAJtXErrjR9BcXeiG+uQ=",
+  "Hash": "NDc8TlPWVpA0iLRHGV9zqc09YgZXDzTrJAKNToSUULg=",
   "Source": "Api_TikTok",
   "BasePath": "_content/Api_TikTok",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Api_TikTok\\wwwroot",
+      "Source": "Api_TikTok",
+      "ContentRoot": "E:\\Api_TikTok\\wwwroot\\",
+      "BasePath": "_content/Api_TikTok",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Api_TikTok\\wwwroot\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png",
+      "SourceId": "Api_TikTok",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Api_TikTok\\wwwroot\\",
+      "BasePath": "_content/Api_TikTok",
+      "RelativePath": "avatars/5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jg2tle1fnp",
+      "Integrity": "s65zLLsBUbA90+4Ak5Sgk1Fk0m3RoLAp9+S3lJ09tT0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "avatars/5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.jg2tle1fnp.png",
+      "AssetFile": "E:\\Api_TikTok\\wwwroot\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "122397"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s65zLLsBUbA90+4Ak5Sgk1Fk0m3RoLAp9+S3lJ09tT0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 03:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jg2tle1fnp"
+        },
+        {
+          "Name": "label",
+          "Value": "avatars/5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s65zLLsBUbA90+4Ak5Sgk1Fk0m3RoLAp9+S3lJ09tT0="
+        }
+      ]
+    },
+    {
+      "Route": "avatars/5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png",
+      "AssetFile": "E:\\Api_TikTok\\wwwroot\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "122397"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s65zLLsBUbA90+4Ak5Sgk1Fk0m3RoLAp9+S3lJ09tT0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 03:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s65zLLsBUbA90+4Ak5Sgk1Fk0m3RoLAp9+S3lJ09tT0="
+        }
+      ]
+    }
+  ]
 }

@@ -10,20 +10,14 @@ namespace Api_TikTok.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required]
-        [MaxLength(255)]
         public string Email { get; set; }
 
-        [Required]
-        [MaxLength(255)]
         public string Password { get; set; }
 
-        [Required]
         public string Username { get; set; }
 
-        //[MaxLength(255)]
-        //public string AvatarUrl { get; set; }
-
+        public string? Avatar { get; set; }
+        public string? Bio { get; set; }
 
         // Các mối quan hệ khác
         public ICollection<Video> Videos { get; set; }

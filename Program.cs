@@ -6,10 +6,9 @@ using Api_TikTok.Service.Impl;
 using Api_TikTok.Repository.Impl;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Microsoft.AspNetCore.Http.Features;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
@@ -18,11 +17,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     )
 );
 
-builder.Services.Configure<FormOptions>(options =>
+builder.WebHost.ConfigureKestrel(serverOptions =>
 {
-    options.MultipartBodyLengthLimit = 104857600; // 100 MB
+    serverOptions.Limits.MaxRequestBodySize = 104857600; // 100 MB
 });
-
 
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>
@@ -42,13 +40,41 @@ builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddScoped<UserService, UserServiceImpl>();
 builder.Services.AddScoped<UserRepository, UserRepositoryImpl>();
-builder.Services.AddScoped<UploadFileService, UploadFileServiceImpl>();
-builder.Services.AddScoped<UploadFileRepository, UploadFileRepositoryImpl>();
+builder.Services.AddScoped<VideoService, VideoServiceImpl>();
+builder.Services.AddScoped<VideoRepository, VideoRepositoryImpl>();
 
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API TikTok", Version = "v1" });
+
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        BearerFormat = "JWT",
+        Description = "Please enter a valid JWT token"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
 
 var app = builder.Build();
 
@@ -57,14 +83,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API TikTok v1");
-
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API TikTok");
     });
 }
 
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseRouting();
-app.UseAuthentication(); 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

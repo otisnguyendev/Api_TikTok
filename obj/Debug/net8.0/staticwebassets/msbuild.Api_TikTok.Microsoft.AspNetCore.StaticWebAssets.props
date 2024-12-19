@@ -1,0 +1,22 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\avatars\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Api_TikTok</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Api_TikTok</BasePath>
+      <RelativePath>avatars/5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>jg2tle1fnp</Fingerprint>
+      <Integrity>s65zLLsBUbA90+4Ak5Sgk1Fk0m3RoLAp9+S3lJ09tT0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\avatars\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

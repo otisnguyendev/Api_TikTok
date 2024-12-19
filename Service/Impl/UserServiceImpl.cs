@@ -94,6 +94,45 @@ namespace Api_TikTok.Service.Impl
             return await _userRepository.UpdateAsync(user);
         }
 
+        public async Task<bool> UpdateProfileAsync(int userId, UpdateProfileDto request)
+        {
+            var user = await _userRepository.GetByIdAsync(userId);
+            if (user == null)
+                return false;
+
+            if (!string.IsNullOrWhiteSpace(request.Username))
+                user.Username = request.Username;
+
+            if (!string.IsNullOrWhiteSpace(request.Bio))
+                user.Bio = request.Bio;
+
+            if (request.Avatar != null)
+            {
+                var avatarUrl = await SaveFileAsync(request.Avatar, "avatars");
+                user.Avatar = avatarUrl;
+            }
+
+            return await _userRepository.UpdateAsync(user);
+        }
+
+        private async Task<string> SaveFileAsync(IFormFile file, string folderName)
+        {
+            var uploadsFolder = Path.Combine("wwwroot", folderName);
+            Directory.CreateDirectory(uploadsFolder);
+
+            var uniqueFileName = $"{Path.GetFileNameWithoutExtension(file.FileName)}_{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+
+            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(fileStream);
+            }
+
+            return $"/{folderName}/{uniqueFileName}";
+        }
+
+
         private string GenerateJwtToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();

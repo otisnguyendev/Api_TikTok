@@ -86,6 +86,23 @@ namespace Api_TikTok.Controller
             return Ok(new { Message = "Password changed successfully" });
         }
 
+        [Authorize]
+        [HttpPut("{id:int}/update-profile")]
+        public async Task<IActionResult> UpdateProfile(int id, [FromForm] UpdateProfileDto request)
+        {
+            if (id <= 0 || request == null)
+                return BadRequest(new { Message = "Invalid request" });
+
+            var userIdFromToken = GetUserIdFromClaims();
+            if (id != userIdFromToken)
+                return StatusCode(403, new { Message = "You are not authorized to update this profile" });
+
+            var result = await _userService.UpdateProfileAsync(id, request);
+            if (!result)
+                return BadRequest(new { Message = "Profile update failed" });
+
+            return Ok(new { Message = "Profile updated successfully" });
+        }
 
         private int GetUserIdFromClaims()
         {
@@ -97,7 +114,7 @@ namespace Api_TikTok.Controller
             return 0;
         }
 
-      
+        
 
     }
 }
