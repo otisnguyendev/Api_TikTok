@@ -51,3 +51,5 @@ E:\Api_TikTok\obj\Debug\net8.0\refint\Api_TikTok.dll
 E:\Api_TikTok\obj\Debug\net8.0\Api_TikTok.pdb
 E:\Api_TikTok\obj\Debug\net8.0\Api_TikTok.genruntimeconfig.cache
 E:\Api_TikTok\obj\Debug\net8.0\ref\Api_TikTok.dll
+E:\Api_TikTok\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Api_TikTok\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll

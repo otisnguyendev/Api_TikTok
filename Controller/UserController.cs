@@ -1,4 +1,4 @@
-﻿using Api_TikTok.Dto;
+﻿    using Api_TikTok.Dto;
 using Api_TikTok.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity.Data;
@@ -113,8 +113,5 @@ namespace Api_TikTok.Controller
             }
             return 0;
         }
-
-        
-
     }
 }

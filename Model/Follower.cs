@@ -17,7 +17,5 @@ namespace Api_TikTok.Model
         [ForeignKey("FollowingUser")]
         public int FollowingUserId { get; set; }
         public User FollowingUser { get; set; }  // Người được theo dõi
-
-        //public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

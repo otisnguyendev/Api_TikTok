@@ -18,13 +18,9 @@ namespace Api_TikTok.Model
         public int ReceiverUserId { get; set; }
         public User Receiver { get; set; }
 
-        [Required]
         public string Content { get; set; }
 
-        [Required]
         public MessageType MessageType { get; set; } 
-
-        //public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 
     public enum MessageType

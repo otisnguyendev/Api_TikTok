@@ -21,7 +21,5 @@ namespace Api_TikTok.Model
         public string Type { get; set; }
 
         public bool IsRead { get; set; } = false;
-
-        //public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

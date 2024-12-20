@@ -1,5 +1,53 @@
 [
   {
+    "ContainingType": "MessageController",
+    "Method": "DeleteMessage",
+    "RelativePath": "api/messages/{messageId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageController",
+    "Method": "GetChatHistory",
+    "RelativePath": "api/messages/history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatWithUserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageController",
+    "Method": "SendMessage",
+    "RelativePath": "api/messages/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Api_TikTok.Dto.SendMessageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Api_TikTok.Controller.UserController",
     "Method": "GetAll",
     "RelativePath": "api/users",

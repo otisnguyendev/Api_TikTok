@@ -7,6 +7,8 @@ using Api_TikTok.Repository.Impl;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using Api_TikTok.Chat;
+using Api_TikTok.Config;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,40 +44,27 @@ builder.Services.AddScoped<UserService, UserServiceImpl>();
 builder.Services.AddScoped<UserRepository, UserRepositoryImpl>();
 builder.Services.AddScoped<VideoService, VideoServiceImpl>();
 builder.Services.AddScoped<VideoRepository, VideoRepositoryImpl>();
+builder.Services.AddScoped<MessageService, MessageServiceImpl>();
+builder.Services.AddScoped<MessageRepository, MessageRepositoryImpl>();
 
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API TikTok", Version = "v1" });
-
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+{    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
         Name = "Authorization",
         Type = SecuritySchemeType.ApiKey,
         BearerFormat = "JWT",
-        Description = "Please enter a valid JWT token"
+        Description = "Nhập 'Bearer' [khoảng trắng] và token của bạn",
     });
 
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            new string[] {}
-        }
-    });
+    c.OperationFilter<AuthorizeOperationFilter>();
 });
 
+builder.Services.AddSignalR();
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -86,6 +75,7 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "API TikTok");
     });
 }
+app.MapHub<ChatHub>("/chatHub");
 
 app.UseStaticFiles();
 app.UseHttpsRedirection();

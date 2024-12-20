@@ -18,7 +18,5 @@ namespace Api_TikTok.Model
         [ForeignKey("Video")]
         public int VideoId { get; set; }
         public Video Video { get; set; }
-
-        //public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }
