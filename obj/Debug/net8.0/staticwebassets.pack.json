@@ -1,8 +1,12 @@
 {
   "Files": [
     {
-      "Id": "E:\\Api_TikTok\\wwwroot\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png",
-      "PackagePath": "staticwebassets\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png"
+      "Id": "E:\\Api_TikTok\\wwwroot\\avatars\\db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2.png",
+      "PackagePath": "staticwebassets\\avatars\\db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2.png"
+    },
+    {
+      "Id": "E:\\Api_TikTok\\wwwroot\\videos\\video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149.mp4",
+      "PackagePath": "staticwebassets\\videos\\video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Api_TikTok.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

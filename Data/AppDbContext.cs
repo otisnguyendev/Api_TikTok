@@ -62,7 +62,14 @@ namespace Api_TikTok.Data
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Email)
                 .IsUnique();
-          
+
+            modelBuilder.Entity<Video>()
+    .HasOne(v => v.User)
+    .WithMany(u => u.Videos)
+    .HasForeignKey(v => v.UserId)
+    .OnDelete(DeleteBehavior.Cascade);
+
+
         }
     }
 }

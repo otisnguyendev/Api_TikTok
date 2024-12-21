@@ -19,7 +19,6 @@ namespace Api_TikTok.Model
         public string? Avatar { get; set; }
         public string? Bio { get; set; }
 
-        // Các mối quan hệ khác
         public ICollection<Video> Videos { get; set; }
         public ICollection<Comment> Comments { get; set; }
         public ICollection<Like> Likes { get; set; }

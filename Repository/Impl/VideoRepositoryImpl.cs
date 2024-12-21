@@ -1,6 +1,5 @@
 ﻿using Api_TikTok.Data;
 using Api_TikTok.Model;
-using Microsoft.EntityFrameworkCore;
 
 namespace Api_TikTok.Repository.Impl
 {
@@ -10,8 +9,9 @@ namespace Api_TikTok.Repository.Impl
 
         public VideoRepositoryImpl(AppDbContext context)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _context = context;
         }
+        public async Task<User?> GetByIdAsync(int id) => await _context.Users.FindAsync(id);
 
         public async Task<bool> CreateAsync(Video video)
         {

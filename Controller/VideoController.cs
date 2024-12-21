@@ -1,6 +1,8 @@
 ﻿using Api_TikTok.Dto;
+using Api_TikTok.Model;
 using Api_TikTok.Service;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -14,25 +16,27 @@ namespace Api_TikTok.Controller
 
         public VideoController(VideoService videoService)
         {
-            _videoService = videoService ?? throw new ArgumentNullException(nameof(videoService));
+            _videoService = videoService;
         }
 
         [Authorize]
-        [RequestSizeLimit(104857600)]
-        [HttpPost("upload")]
+        [HttpPost("upload-video")]      
         public async Task<IActionResult> UploadVideo([FromForm] UploadVideoDto request)
         {
-            var userId = GetUserIdFromClaims();
-            if (userId <= 0)
-                return Unauthorized(new { Message = "Invalid user" });
+            var userId = GetUserIdFromClaims();  
+
+            if (userId == 0)
+            {
+                return Unauthorized(new { message = "User not authenticated" });
+            }
 
             var result = await _videoService.UploadVideoAsync(userId, request);
-            if (!result)
-                return BadRequest(new { Message = "Video upload failed" });
 
-            return Ok(new { Message = "Video uploaded successfully" });
+            if (result)
+                return Ok(new { message = "Video uploaded successfully." });
+            else
+                return BadRequest(new { message = "Failed to upload video." });
         }
-
         private int GetUserIdFromClaims()
         {
             if (User.Identity?.IsAuthenticated == true)

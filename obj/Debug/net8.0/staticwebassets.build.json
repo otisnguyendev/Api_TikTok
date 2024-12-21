@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NDc8TlPWVpA0iLRHGV9zqc09YgZXDzTrJAKNToSUULg=",
+  "Hash": "SiaKLFuW8pWnsG4CYbMOUka9EHiQl+LuuLT/q2akjio=",
   "Source": "Api_TikTok",
   "BasePath": "_content/Api_TikTok",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "E:\\Api_TikTok\\wwwroot\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png",
+      "Identity": "E:\\Api_TikTok\\wwwroot\\avatars\\db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2.png",
       "SourceId": "Api_TikTok",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Api_TikTok\\wwwroot\\",
       "BasePath": "_content/Api_TikTok",
-      "RelativePath": "avatars/5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db#[.{fingerprint}]?.png",
+      "RelativePath": "avatars/db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35,13 +35,34 @@
       "Integrity": "s65zLLsBUbA90+4Ak5Sgk1Fk0m3RoLAp9+S3lJ09tT0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png"
+      "OriginalItemSpec": "wwwroot\\avatars\\db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2.png"
+    },
+    {
+      "Identity": "E:\\Api_TikTok\\wwwroot\\videos\\video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149.mp4",
+      "SourceId": "Api_TikTok",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Api_TikTok\\wwwroot\\",
+      "BasePath": "_content/Api_TikTok",
+      "RelativePath": "videos/video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149#[.{fingerprint}]?.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kfcgkii9ke",
+      "Integrity": "EOE49Tb8SJaWRzrZXqJ5HS4P6/3QCCtIRJIaK3utqbc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\videos\\video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149.mp4"
     }
   ],
   "Endpoints": [
     {
-      "Route": "avatars/5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.jg2tle1fnp.png",
-      "AssetFile": "E:\\Api_TikTok\\wwwroot\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png",
+      "Route": "avatars/db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2.jg2tle1fnp.png",
+      "AssetFile": "E:\\Api_TikTok\\wwwroot\\avatars\\db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -62,7 +83,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 03:51:46 GMT"
+          "Value": "Sat, 21 Dec 2024 03:48:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -76,7 +97,7 @@
         },
         {
           "Name": "label",
-          "Value": "avatars/5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png"
+          "Value": "avatars/db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2.png"
         },
         {
           "Name": "integrity",
@@ -85,8 +106,8 @@
       ]
     },
     {
-      "Route": "avatars/5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png",
-      "AssetFile": "E:\\Api_TikTok\\wwwroot\\avatars\\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png",
+      "Route": "avatars/db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2.png",
+      "AssetFile": "E:\\Api_TikTok\\wwwroot\\avatars\\db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -107,7 +128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 03:51:46 GMT"
+          "Value": "Sat, 21 Dec 2024 03:48:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -118,6 +139,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-s65zLLsBUbA90+4Ak5Sgk1Fk0m3RoLAp9+S3lJ09tT0="
+        }
+      ]
+    },
+    {
+      "Route": "videos/video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149.kfcgkii9ke.mp4",
+      "AssetFile": "E:\\Api_TikTok\\wwwroot\\videos\\video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16741710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EOE49Tb8SJaWRzrZXqJ5HS4P6/3QCCtIRJIaK3utqbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 04:48:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kfcgkii9ke"
+        },
+        {
+          "Name": "label",
+          "Value": "videos/video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149.mp4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EOE49Tb8SJaWRzrZXqJ5HS4P6/3QCCtIRJIaK3utqbc="
+        }
+      ]
+    },
+    {
+      "Route": "videos/video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149.mp4",
+      "AssetFile": "E:\\Api_TikTok\\wwwroot\\videos\\video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16741710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EOE49Tb8SJaWRzrZXqJ5HS4P6/3QCCtIRJIaK3utqbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 04:48:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EOE49Tb8SJaWRzrZXqJ5HS4P6/3QCCtIRJIaK3utqbc="
         }
       ]
     }

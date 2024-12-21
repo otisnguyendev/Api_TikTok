@@ -160,11 +160,16 @@
   {
     "ContainingType": "Api_TikTok.Controller.VideoController",
     "Method": "UploadVideo",
-    "RelativePath": "api/videos/upload",
+    "RelativePath": "api/videos/upload-video",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "Video",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
       {
         "Name": "Title",
         "Type": "System.String",
@@ -183,11 +188,6 @@
       {
         "Name": "PrivacyLevel",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "VideoFile",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
     ],

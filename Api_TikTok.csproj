@@ -19,6 +19,7 @@
 
 	<ItemGroup>
 	  <Folder Include="Exception\" />
+	  <Folder Include="wwwroot\videos\" />
 	</ItemGroup>
 
 </Project>

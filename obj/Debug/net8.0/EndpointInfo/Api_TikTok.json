@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Api_TikTok",
-    "version": "1.0"
+    "title": "API TikTok",
+    "version": "v1"
   },
   "paths": {
     "/api/messages/send": {
@@ -33,12 +33,7 @@
           "200": {
             "description": "OK"
           }
-        },
-        "security": [
-          {
-            "Bearer": [ ]
-          }
-        ]
+        }
       }
     },
     "/api/messages/history": {
@@ -60,12 +55,7 @@
           "200": {
             "description": "OK"
           }
-        },
-        "security": [
-          {
-            "Bearer": [ ]
-          }
-        ]
+        }
       }
     },
     "/api/messages/{messageId}": {
@@ -88,12 +78,7 @@
           "200": {
             "description": "OK"
           }
-        },
-        "security": [
-          {
-            "Bearer": [ ]
-          }
-        ]
+        }
       }
     },
     "/api/users": {
@@ -232,12 +217,7 @@
           "200": {
             "description": "OK"
           }
-        },
-        "security": [
-          {
-            "Bearer": [ ]
-          }
-        ]
+        }
       }
     },
     "/api/users/{id}/update-profile": {
@@ -292,15 +272,10 @@
           "200": {
             "description": "OK"
           }
-        },
-        "security": [
-          {
-            "Bearer": [ ]
-          }
-        ]
+        }
       }
     },
-    "/api/videos/upload": {
+    "/api/videos/upload-video": {
       "post": {
         "tags": [
           "Video"
@@ -309,13 +284,12 @@
           "content": {
             "multipart/form-data": {
               "schema": {
-                "required": [
-                  "PrivacyLevel",
-                  "Title",
-                  "VideoFile"
-                ],
                 "type": "object",
                 "properties": {
+                  "Video": {
+                    "type": "string",
+                    "format": "binary"
+                  },
                   "Title": {
                     "type": "string"
                   },
@@ -326,15 +300,14 @@
                     "type": "string"
                   },
                   "PrivacyLevel": {
-                    "type": "string"
-                  },
-                  "VideoFile": {
-                    "type": "string",
-                    "format": "binary"
+                    "$ref": "#/components/schemas/PrivacyLevel"
                   }
                 }
               },
               "encoding": {
+                "Video": {
+                  "style": "form"
+                },
                 "Title": {
                   "style": "form"
                 },
@@ -346,9 +319,6 @@
                 },
                 "PrivacyLevel": {
                   "style": "form"
-                },
-                "VideoFile": {
-                  "style": "form"
                 }
               }
             }
@@ -358,12 +328,7 @@
           "200": {
             "description": "OK"
           }
-        },
-        "security": [
-          {
-            "Bearer": [ ]
-          }
-        ]
+        }
       }
     }
   },
@@ -412,6 +377,15 @@
       "MessageType": {
         "enum": [
           0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "PrivacyLevel": {
+        "enum": [
           1,
           2,
           3
@@ -469,11 +443,16 @@
     },
     "securitySchemes": {
       "Bearer": {
-        "type": "apiKey",
-        "description": "Nhập 'Bearer' [khoảng trắng] và token của bạn",
-        "name": "Authorization",
-        "in": "header"
+        "type": "http",
+        "description": "Enter your Bearer token in the format: Bearer {your_token}",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
       }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

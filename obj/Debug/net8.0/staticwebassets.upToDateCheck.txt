@@ -1,1 +1,2 @@
-wwwroot\avatars\5c274b2b-9ae5-4759-b4c8-fffa6c107af7_db.png
+wwwroot\avatars\db_0d92d9bd-0c0b-49ea-ada5-acce5826b3f2.png
+wwwroot\videos\video10s_265034ec-d17d-4a2c-b97b-426fb6c7c149.mp4

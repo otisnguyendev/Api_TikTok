@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "E:\\Api_TikTok\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\service\\impl\\messageserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:service\\impl\\messageserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\service\\impl\\videoserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:service\\impl\\videoserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\model\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:model\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\dto\\sendmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:dto\\sendmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\dto\\updatevideodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:dto\\updatevideodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MessageServiceImpl.cs",
-              "DocumentMoniker": "E:\\Api_TikTok\\Service\\Impl\\MessageServiceImpl.cs",
-              "RelativeDocumentMoniker": "Service\\Impl\\MessageServiceImpl.cs",
-              "ToolTip": "E:\\Api_TikTok\\Service\\Impl\\MessageServiceImpl.cs",
-              "RelativeToolTip": "Service\\Impl\\MessageServiceImpl.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBwAAABcAAAAAAAAAA==",
+              "Title": "VideoServiceImpl.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Service\\Impl\\VideoServiceImpl.cs",
+              "RelativeDocumentMoniker": "Service\\Impl\\VideoServiceImpl.cs",
+              "ToolTip": "E:\\Api_TikTok\\Service\\Impl\\VideoServiceImpl.cs",
+              "RelativeToolTip": "Service\\Impl\\VideoServiceImpl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T04:55:30.806Z",
+              "WhenOpened": "2024-12-21T05:04:09.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Message.cs",
-              "DocumentMoniker": "E:\\Api_TikTok\\Model\\Message.cs",
-              "RelativeDocumentMoniker": "Model\\Message.cs",
-              "ToolTip": "E:\\Api_TikTok\\Model\\Message.cs",
-              "RelativeToolTip": "Model\\Message.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
+              "Title": "UpdateVideoDto.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Dto\\UpdateVideoDto.cs",
+              "RelativeDocumentMoniker": "Dto\\UpdateVideoDto.cs",
+              "ToolTip": "E:\\Api_TikTok\\Dto\\UpdateVideoDto.cs",
+              "RelativeToolTip": "Dto\\UpdateVideoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T04:54:33.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SendMessageDto.cs",
-              "DocumentMoniker": "E:\\Api_TikTok\\Dto\\SendMessageDto.cs",
-              "RelativeDocumentMoniker": "Dto\\SendMessageDto.cs",
-              "ToolTip": "E:\\Api_TikTok\\Dto\\SendMessageDto.cs",
-              "RelativeToolTip": "Dto\\SendMessageDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T04:54:24.986Z",
+              "WhenOpened": "2024-12-21T05:02:54.219Z",
               "EditorCaption": ""
             }
           ]
