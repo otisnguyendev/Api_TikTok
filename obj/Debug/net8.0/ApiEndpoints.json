@@ -159,6 +159,53 @@
   },
   {
     "ContainingType": "Api_TikTok.Controller.VideoController",
+    "Method": "UpdateVideo",
+    "RelativePath": "api/videos/{videoId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "videoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Api_TikTok.Dto.UpdateVideoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.VideoController",
+    "Method": "DeleteVideo",
+    "RelativePath": "api/videos/{videoId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "videoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.VideoController",
+    "Method": "GetPublicVideos",
+    "RelativePath": "api/videos/public-feed",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.VideoController",
     "Method": "UploadVideo",
     "RelativePath": "api/videos/upload-video",
     "HttpMethod": "POST",
@@ -189,6 +236,22 @@
         "Name": "PrivacyLevel",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.VideoController",
+    "Method": "GetUserVideos",
+    "RelativePath": "api/videos/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

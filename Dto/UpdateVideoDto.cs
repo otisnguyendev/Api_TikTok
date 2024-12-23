@@ -1,4 +1,6 @@
-﻿namespace Api_TikTok.Dto
+﻿using Api_TikTok.Common;
+
+namespace Api_TikTok.Dto
 {
     public class UpdateVideoDto
     {

@@ -61,7 +61,6 @@ namespace Api_TikTok.Service.Impl
             return await _userRepository.CreateAsync(user);
         }
 
-
         public async Task<LoginDto?> LoginUserAsync(string email, string password)
         {
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
@@ -131,7 +130,6 @@ namespace Api_TikTok.Service.Impl
 
             return $"/{folderName}/{uniqueFileName}";
         }
-
 
         private string GenerateJwtToken(User user)
         {
