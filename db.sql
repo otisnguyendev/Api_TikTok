@@ -73,3 +73,7 @@ CREATE TABLE `bookmarks` (
   FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
   FOREIGN KEY (`video_id`) REFERENCES `videos` (`id`) ON DELETE CASCADE
 );
+
+ALTER TABLE `notifications` ADD COLUMN `is_enabled` BOOLEAN DEFAULT TRUE;
+
+select * from notifications;

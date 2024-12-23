@@ -9,7 +9,7 @@ namespace Api_TikTok.Controller
 {
     [Route("api/users")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UserController : BaseController
     {
         private readonly UserService _userService;
 
@@ -104,14 +104,14 @@ namespace Api_TikTok.Controller
             return Ok(new { Message = "Profile updated successfully" });
         }
 
-        private int GetUserIdFromClaims()
-        {
-            if (User.Identity?.IsAuthenticated == true)
-            {
-                var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
-                return userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
-            }
-            return 0;
-        }
+        //private int GetUserIdFromClaims()
+        //{
+        //    if (User.Identity?.IsAuthenticated == true)
+        //    {
+        //        var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+        //        return userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
+        //    }
+        //    return 0;
+        //}
     }
 }

@@ -38,6 +38,13 @@ namespace Api_TikTok.Repository.Impl
             _context.Users.Update(user);
             return await _context.SaveChangesAsync() > 0;
         }
+        public async Task<List<User>> SearchUsersAsync(string keyword)
+        {
+            return await _context.Users
+                .Where(u => EF.Functions.Like(u.Username, $"%{keyword}%") ||
+                            EF.Functions.Like(u.Bio, $"%{keyword}%"))
+                .ToListAsync();
+        }
     }
 }
 

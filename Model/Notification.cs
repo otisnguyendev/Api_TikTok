@@ -11,15 +11,15 @@ namespace Api_TikTok.Model
         public int Id { get; set; }
 
         [ForeignKey("User")]
+        [Column("user_id")]
         public int UserId { get; set; }
         public User User { get; set; }
 
-        [Required]
         public string Message { get; set; }
-
-        [Required]
         public string Type { get; set; }
 
+        [Column("is_read")]
         public bool IsRead { get; set; } = false;
+
     }
 }

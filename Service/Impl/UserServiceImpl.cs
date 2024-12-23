@@ -79,7 +79,17 @@ namespace Api_TikTok.Service.Impl
                 Token = tokenString
             };
         }
-
+        public async Task<List<UserDto>> SearchUsersAsync(string keyword)
+        {
+            var users = await _userRepository.SearchUsersAsync(keyword);
+            return users.Select(u => new UserDto
+            {
+                Id = u.Id,
+                Username = u.Username,
+                Avatar = u.Avatar,
+                Bio = u.Bio
+            }).ToList();
+        }
         public async Task<bool> ChangePasswordAsync(int userId, string oldPassword, string newPassword)
         {
             if (string.IsNullOrWhiteSpace(oldPassword) || string.IsNullOrWhiteSpace(newPassword))

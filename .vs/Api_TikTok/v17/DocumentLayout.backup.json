@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "E:\\Api_TikTok\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\controller\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:controller\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\controller\\bookmarkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:controller\\bookmarkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\service\\impl\\videoserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:service\\impl\\videoserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\service\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:service\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\repository\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:repository\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\repository\\impl\\videorepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:repository\\impl\\videorepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|e:\\api_tiktok\\service\\impl\\bookmarkserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C30B00-3F48-4FB1-98B3-D467737F7CFF}|Api_TikTok.csproj|solutionrelative:service\\impl\\bookmarkserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VideoRepository.cs",
-              "DocumentMoniker": "E:\\Api_TikTok\\Repository\\VideoRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\VideoRepository.cs",
-              "ToolTip": "E:\\Api_TikTok\\Repository\\VideoRepository.cs",
-              "RelativeToolTip": "Repository\\VideoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BookmarkController.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Controller\\BookmarkController.cs",
+              "RelativeDocumentMoniker": "Controller\\BookmarkController.cs",
+              "ToolTip": "E:\\Api_TikTok\\Controller\\BookmarkController.cs",
+              "RelativeToolTip": "Controller\\BookmarkController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T02:08:25.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VideoService.cs",
-              "DocumentMoniker": "E:\\Api_TikTok\\Service\\VideoService.cs",
-              "RelativeDocumentMoniker": "Service\\VideoService.cs",
-              "ToolTip": "E:\\Api_TikTok\\Service\\VideoService.cs",
-              "RelativeToolTip": "Service\\VideoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T02:06:31.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VideoRepositoryImpl.cs",
-              "DocumentMoniker": "E:\\Api_TikTok\\Repository\\Impl\\VideoRepositoryImpl.cs",
-              "RelativeDocumentMoniker": "Repository\\Impl\\VideoRepositoryImpl.cs",
-              "ToolTip": "E:\\Api_TikTok\\Repository\\Impl\\VideoRepositoryImpl.cs",
-              "RelativeToolTip": "Repository\\Impl\\VideoRepositoryImpl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T01:52:33.551Z",
+              "WhenOpened": "2024-12-23T09:59:12.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VideoServiceImpl.cs",
-              "DocumentMoniker": "E:\\Api_TikTok\\Service\\Impl\\VideoServiceImpl.cs",
-              "RelativeDocumentMoniker": "Service\\Impl\\VideoServiceImpl.cs",
-              "ToolTip": "E:\\Api_TikTok\\Service\\Impl\\VideoServiceImpl.cs",
-              "RelativeToolTip": "Service\\Impl\\VideoServiceImpl.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAA5wF0AAAAAAAAAAAAAAA==",
+              "Title": "BookmarkServiceImpl.cs",
+              "DocumentMoniker": "E:\\Api_TikTok\\Service\\Impl\\BookmarkServiceImpl.cs",
+              "RelativeDocumentMoniker": "Service\\Impl\\BookmarkServiceImpl.cs",
+              "ToolTip": "E:\\Api_TikTok\\Service\\Impl\\BookmarkServiceImpl.cs",
+              "RelativeToolTip": "Service\\Impl\\BookmarkServiceImpl.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T01:22:05.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VideoController.cs",
-              "DocumentMoniker": "E:\\Api_TikTok\\Controller\\VideoController.cs",
-              "RelativeDocumentMoniker": "Controller\\VideoController.cs",
-              "ToolTip": "E:\\Api_TikTok\\Controller\\VideoController.cs",
-              "RelativeToolTip": "Controller\\VideoController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAkwFYAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T01:07:54.404Z",
+              "WhenOpened": "2024-12-23T09:53:23.221Z",
               "EditorCaption": ""
             }
           ]

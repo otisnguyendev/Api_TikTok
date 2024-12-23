@@ -121,5 +121,22 @@ namespace Api_TikTok.Service.Impl
 
             return $"/{folderName}/{uniqueFileName}";
         }
+        public async Task<List<VideoDto>> SearchVideosAsync(string keyword)
+        {
+            var videos = await _videoRepository.SearchVideosAsync(keyword);
+            return videos.Select(v => new VideoDto
+            {
+                Id = v.Id,
+                Title = v.Title,
+                Description = v.Description,
+                Hashtags = v.Hashtags,
+                PrivacyLevel = v.PrivacyLevel,
+                VideoUrl = v.VideoUrl,
+                UserId = v.UserId,
+                UserName = v.User.Username
+            }).ToList();
+        }
+
+
     }
 }

@@ -10,5 +10,7 @@ namespace Api_TikTok.Repository
         Task<Video?> GetVideoByIdAsync(int videoId);
         Task<bool> DeleteAsync(Video video);
         Task<bool> SaveChangesAsync();
+        Task<List<Video>> SearchVideosAsync(string keyword);
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using Api_TikTok.Dto;
+﻿using Api_TikTok.Controller;
+using Api_TikTok.Dto;
 using Api_TikTok.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -6,24 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 [Route("api/messages")]
 [ApiController]
 [Authorize]
-public class MessageController : ControllerBase
+public class MessageController : BaseController
 {
     private readonly MessageService _messageService;
 
     public MessageController(MessageService messageService)
     {
         _messageService = messageService ?? throw new ArgumentNullException(nameof(messageService));
-    }
-
-    private int GetUserIdFromClaims()
-    {
-        if (User.Identity?.IsAuthenticated == true)
-        {
-            var userIdClaim = User.FindFirst("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier");
-            if (userIdClaim != null && int.TryParse(userIdClaim.Value, out var userId))
-                return userId;
-        }
-        return 0;
     }
 
     [HttpPost("send")]

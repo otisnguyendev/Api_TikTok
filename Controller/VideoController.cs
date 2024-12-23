@@ -10,7 +10,7 @@ namespace Api_TikTok.Controller
 {
     [Route("api/videos")]
     [ApiController]
-    public class VideoController : ControllerBase
+    public class VideoController : BaseController
     {
         private readonly VideoService _videoService;
 
@@ -82,14 +82,14 @@ namespace Api_TikTok.Controller
                 return BadRequest(new { message = "Failed to delete video." });
         }
 
-        private int GetUserIdFromClaims()
-        {
-            if (User.Identity?.IsAuthenticated == true)
-            {
-                var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
-                return userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
-            }
-            return 0;
-        }
+        //private int GetUserIdFromClaims()
+        //{
+        //    if (User.Identity?.IsAuthenticated == true)
+        //    {
+        //        var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+        //        return userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
+        //    }
+        //    return 0;
+        //}
     }
 }

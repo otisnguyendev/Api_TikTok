@@ -52,5 +52,15 @@ namespace Api_TikTok.Repository.Impl
         {
             return await _context.SaveChangesAsync() > 0;
         }
+        public async Task<List<Video>> SearchVideosAsync(string keyword)
+        {
+            return await _context.Videos
+                .Include(v => v.User)
+                .Where(v => EF.Functions.Like(v.Title, $"%{keyword}%") ||
+                            EF.Functions.Like(v.Description, $"%{keyword}%") ||
+                            EF.Functions.Like(v.Hashtags, $"%{keyword}%"))
+                .Where(v => v.PrivacyLevel == "public")
+                .ToListAsync();
+        }
     }
 }

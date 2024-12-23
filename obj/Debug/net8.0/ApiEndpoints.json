@@ -1,5 +1,175 @@
 [
   {
+    "ContainingType": "Api_TikTok.Controller.BookmarkController",
+    "Method": "AddBookmark",
+    "RelativePath": "api/bookmarks/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookmarkDto",
+        "Type": "Api_TikTok.Dto.BookmarkDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.BookmarkController",
+    "Method": "GetBookmarksByUserId",
+    "RelativePath": "api/bookmarks/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.CommentController",
+    "Method": "AddComment",
+    "RelativePath": "api/comments/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentDto",
+        "Type": "Api_TikTok.Model.DTO.CommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.CommentController",
+    "Method": "DeleteComment",
+    "RelativePath": "api/comments/delete/{commentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.CommentController",
+    "Method": "EditComment",
+    "RelativePath": "api/comments/edit/{commentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "commentDto",
+        "Type": "Api_TikTok.Model.DTO.CommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.FollowerController",
+    "Method": "FollowUser",
+    "RelativePath": "api/followers/follow/{userId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.FollowerController",
+    "Method": "GetFollowers",
+    "RelativePath": "api/followers/followers/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.FollowerController",
+    "Method": "GetFollowing",
+    "RelativePath": "api/followers/following/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.FollowerController",
+    "Method": "UnfollowUser",
+    "RelativePath": "api/followers/unfollow/{userId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.LikeController",
+    "Method": "ToggleLike",
+    "RelativePath": "api/likes/toggle-like/{videoId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "videoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "isLiked",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MessageController",
     "Method": "DeleteMessage",
     "RelativePath": "api/messages/{messageId}",
@@ -43,6 +213,102 @@
         "Name": "request",
         "Type": "Api_TikTok.Dto.SendMessageDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.NotificationController",
+    "Method": "SendFollowNotification",
+    "RelativePath": "api/notifications/follow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "followNotificationDto",
+        "Type": "Api_TikTok.Dto.FollowNotificationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.NotificationController",
+    "Method": "SendInteractionNotification",
+    "RelativePath": "api/notifications/interaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notificationDto",
+        "Type": "Api_TikTok.Dto.InteractionNotificationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.NotificationController",
+    "Method": "SendNewVideoNotification",
+    "RelativePath": "api/notifications/new-video",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "videoNotificationDto",
+        "Type": "Api_TikTok.Dto.NewVideoNotificationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.NotificationController",
+    "Method": "UpdateNotificationSettings",
+    "RelativePath": "api/notifications/update-notification-settings",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "settingsDto",
+        "Type": "Api_TikTok.Dto.NotificationSettingsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.SearchController",
+    "Method": "SearchUsers",
+    "RelativePath": "api/search/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_TikTok.Controller.SearchController",
+    "Method": "SearchVideos",
+    "RelativePath": "api/search/videos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

@@ -21,27 +21,27 @@ namespace Api_TikTok.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Follower>()
-                .HasKey(f => new { f.FollowerUserId, f.FollowingUserId });
+                .HasKey(f => f.Id); 
 
             modelBuilder.Entity<Follower>()
                 .HasIndex(f => new { f.FollowerUserId, f.FollowingUserId })
-                .IsUnique();
+                .IsUnique(); 
 
             modelBuilder.Entity<Follower>()
                 .HasOne(f => f.FollowingUser)
                 .WithMany(u => u.Followers)
                 .HasForeignKey(f => f.FollowingUserId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Restrict); 
 
             modelBuilder.Entity<Follower>()
                 .HasOne(f => f.FollowerUser)
-                .WithMany()
+                .WithMany(u => u.Following)
                 .HasForeignKey(f => f.FollowerUserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Message>()
                 .Property(m => m.MessageType)
-                .HasConversion<int>();
+                .HasConversion<string>(); 
 
             modelBuilder.Entity<Message>()
                 .HasOne(m => m.Sender)
@@ -53,7 +53,7 @@ namespace Api_TikTok.Data
                 .HasOne(m => m.Receiver)
                 .WithMany(u => u.ReceivedMessages)
                 .HasForeignKey(m => m.ReceiverUserId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Cascade); 
 
             modelBuilder.Entity<User>()
                 .Property(u => u.Email)
@@ -61,14 +61,13 @@ namespace Api_TikTok.Data
 
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Email)
-                .IsUnique();
+                .IsUnique(); 
 
             modelBuilder.Entity<Video>()
-    .HasOne(v => v.User)
-    .WithMany(u => u.Videos)
-    .HasForeignKey(v => v.UserId)
-    .OnDelete(DeleteBehavior.Cascade);
-
+                .HasOne(v => v.User)
+                .WithMany(u => u.Videos)
+                .HasForeignKey(v => v.UserId)
+                .OnDelete(DeleteBehavior.Cascade); 
 
         }
     }

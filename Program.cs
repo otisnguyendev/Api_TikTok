@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Http.Features;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure database context with MySQL
+// Config DB MySQL
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -20,15 +20,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     )
 );
 
-// Set the maximum request body size 
+// Set max upload 100MB
 builder.WebHost.UseKestrel(options =>
 {
-    options.Limits.MaxRequestBodySize = 104857600; // 100 MB
+    options.Limits.MaxRequestBodySize = 104857600; 
 });
 
 builder.Services.Configure<FormOptions>(options =>
 {
-    options.MultipartBodyLengthLimit = 104857600; // 100 MB
+    options.MultipartBodyLengthLimit = 104857600; 
 });
 
 builder.Services.AddAuthentication("Bearer")
@@ -36,7 +36,7 @@ builder.Services.AddAuthentication("Bearer")
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = false, // You can set these to true if you're using a specific issuer/audience
+            ValidateIssuer = false, 
             ValidateAudience = false,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
@@ -51,6 +51,16 @@ builder.Services.AddScoped<VideoService, VideoServiceImpl>();
 builder.Services.AddScoped<VideoRepository, VideoRepositoryImpl>();
 builder.Services.AddScoped<MessageService, MessageServiceImpl>();
 builder.Services.AddScoped<MessageRepository, MessageRepositoryImpl>();
+builder.Services.AddScoped<FollowerService, FollowerServiceImpl>();
+builder.Services.AddScoped<FollowerRepository, FollowerRepositoryImpl>();
+builder.Services.AddScoped<LikeService, LikeServiceImpl>();
+builder.Services.AddScoped<LikeRepository, LikeRepositoryImpl>();
+builder.Services.AddScoped<CommentService, CommentServiceImpl>();
+builder.Services.AddScoped<CommentRepository, CommentRepositoryImpl>();
+builder.Services.AddScoped<NotificationRepository, NotificationRepositoryImpl>();
+builder.Services.AddScoped<NotificationService, NotificationServiceImpl>();
+builder.Services.AddScoped<BookmarkService, BookmarkServiceImpl>();
+builder.Services.AddScoped<BookmarkRepository, BookmarkRepositoryImpl>();
 
 builder.Services.AddHttpContextAccessor();
 
@@ -98,7 +108,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API TikTok V1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API TikTok");
     });
 }
 

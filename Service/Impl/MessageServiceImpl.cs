@@ -20,7 +20,7 @@ namespace Api_TikTok.Service.Impl
                 SenderUserId = request.SenderUserId,
                 ReceiverUserId = request.ReceiverUserId,
                 Content = request.Content,
-                MessageType = request.MessageType
+                MessageType = request.MessageType.ToString()
             };
 
             return await _messageRepository.CreateMessageAsync(message);

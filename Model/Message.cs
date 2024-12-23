@@ -11,23 +11,19 @@ namespace Api_TikTok.Model
         public int Id { get; set; }
 
         [ForeignKey("Sender")]
+        [Column("sender_user_id")]
         public int SenderUserId { get; set; }
         public User Sender { get; set; }
 
         [ForeignKey("Receiver")]
+        [Column("receiver_user_id")]
         public int ReceiverUserId { get; set; }
         public User Receiver { get; set; }
 
         public string Content { get; set; }
 
-        public MessageType MessageType { get; set; } 
-    }
 
-    public enum MessageType
-    {
-        Text,
-        Image,
-        Video,
-        File
+        [Column("message_type")]
+        public string MessageType { get; set; }
     }
 }

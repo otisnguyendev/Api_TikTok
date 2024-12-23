@@ -1,4 +1,4 @@
-﻿using Api_TikTok.Model;
+﻿using Api_TikTok.Common;
 
 namespace Api_TikTok.Dto
 {
